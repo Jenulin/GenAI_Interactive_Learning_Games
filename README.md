@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GenAI_Interactive_Learning_Games
 
 Follow The Instructions
@@ -32,3 +33,6 @@ This project uses an API key. Replace the “your_api_key_here” with the actua
 
 
 
+=======
+# GenAI_Interactive_Learning_Games
+>>>>>>> dd44a356ad91b8f04714b4409fb2b29342b467fb
