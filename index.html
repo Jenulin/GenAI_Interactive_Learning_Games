@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics Learning Adventure</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="avatar.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Home Screen -->
+    <div id="topic-screen" class="screen">
+      <h1><i class="fas fa-rocket"></i> Physics Learning Adventure</h1>
+      <div id="topic-selector" class="topic-selector">
+        <button id="choose-topic-btn" class="choose-topic-btn">
+          <i class="fas fa-atom"></i> Choose Your Physics Topic
+        </button>
+        
+        <div id="topic-modal" class="topic-modal">
+          <div class="modal-content">
+            <button class="close-modal">&times;</button>
+        <h2>Select Your Learning Adventure</h2>
+        <div id="difficulty-selector">
+            <select id="difficulty-dropdown" class="difficulty-dropdown">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+         
+            <div class="topic-grid">
+              <button class="topic-card" data-topic="newton_laws">
+                <i class="fas fa-rocket"></i>
+                <h3>Newton's Laws</h3>
+              </button>
+              <button class="topic-card" data-topic="friction">
+                <i class="fas fa-hand-paper"></i>
+                <h3>Friction</h3>
+              </button>
+              <button class="topic-card" data-topic="electricity">
+                <i class="fas fa-bolt"></i>
+                <h3>Electricity</h3>
+              </button>
+              <button class="topic-card" data-topic="gravitation">
+                <i class="fas fa-globe"></i>
+                <h3>Gravitation</h3>
+              </button>
+              <button class="topic-card" data-topic="heat">
+                <i class="fas fa-fire"></i>
+                <h3>Heat</h3>
+              </button>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  
+<div id="intro-screen" class="screen" style="display: none;">
+  <div class="content-wrapper">
+      <div id="intro-content" class="content"></div>
+  </div>
+
+  <button id="next-intro-btn" class="btn">Next <i class="fas fa-arrow-right"></i></button>
+</div>
+
+
+<div id="laws-screen" class="screen" style="display: none;">
+  <div class="content-wrapper">
+      <div id="laws-content" class="content"></div>
+  </div>
+  <img src="man1.png" alt="Astronaut" class="astronaut-speaking">
+  <button id="next-law-btn" class="btn">Next <i class="fas fa-arrow-right"></i></button>
+</div>
+
+   
+    <div id="puzzle-screen" class="screen" style="display: none;">
+      <div id="puzzle-content" class="content"></div>
+      <div class="puzzle-controls">
+        <button id="next-puzzle-btn" class="btn">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="background-animation">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9267f2358e88bfcc',t:'MTc0MzAwNTcyMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'927000360e09bd4d',t:'MTc0MzA5MDE3OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

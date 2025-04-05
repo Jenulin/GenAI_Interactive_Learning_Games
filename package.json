@@ -1,0 +1,21 @@
+{
+  "name": "genai_learning_game",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "matter-js": "^0.20.0",
+    "phaser": "^3.88.2"
+  },
+  "devDependencies": {
+    "vite": "^6.2.1"
+  }
+}

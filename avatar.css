@@ -1,0 +1,122 @@
+
+#ai-tutor-avatar {
+    position: fixed;
+    width: 200px;
+    height: 230px;
+    bottom: 70px;
+    right: 80px; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+#ai-tutor-speech {
+    position: fixed;
+    bottom: 230px;
+    right: 80px; 
+    width: 250px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1001;
+}
+
+#ai-tutor-speech:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 30px;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.9) transparent;
+    transform: scaleX(-1); 
+}
+
+.avatar-neutral {
+    filter: drop-shadow(0 0 5px rgba(100, 200, 255, 0.7));
+}
+
+.avatar-happy {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 0, 0.7));
+}
+
+.avatar-thinking {
+    filter: drop-shadow(0 0 10px rgba(200, 200, 255, 0.7));
+}
+
+.avatar-encouraging {
+    filter: drop-shadow(0 0 10px rgba(255, 200, 100, 0.7));
+}
+
+
+.animate-celebrate {
+    animation: bounce 0.5s ease infinite alternate;
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-20px); }
+}
+
+.avatar-puzzle-mode {
+    left: auto !important;
+    right: 20px !important;
+    bottom: 20px !important;
+    transform: scaleX(-1) !important;
+}
+
+#ai-tutor-speech.avatar-puzzle-mode {
+    left: auto !important;
+    right: 250px !important;
+    bottom: 230px !important;
+}
+
+#ai-tutor-speech.avatar-puzzle-mode:after {
+    left: auto !important;
+    right: 30px !important;
+    border-width: 10px 10px 0 !important;
+    border-style: solid !important;
+    border-color: rgba(255, 255, 255, 0.9) transparent !important;
+}
+
+.avatar-lesson-mode {
+    left: 20px;
+    right: auto;
+    bottom: 20px;
+    transform: scaleX(1);
+}
+
+
+#ai-tutor-avatar {
+    transition: all 0.5s ease-in-out;
+}
+
+.avatar-teaching {
+    filter: drop-shadow(0 0 10px rgba(0, 150, 255, 0.7));
+    animation: nod 2s infinite;
+}
+
+.avatar-explaining {
+    filter: drop-shadow(0 0 10px rgba(100, 255, 200, 0.7));
+}
+
+.avatar-excited {
+    filter: drop-shadow(0 0 15px rgba(255, 200, 0, 0.8));
+    animation: bounce 0.8s ease infinite;
+}
+
+@keyframes nod {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(5deg); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
