@@ -14,14 +14,19 @@ pip install flask
 pip install groq
 pip install flask-cors
 
-#Open the terminal and change directory to backend
+#To get node_modules run the following command in the terminal:
+npm install 
+
+#run the following command
+npm run dev
+
+#Open another terminal and change directory to backend
 cd backend
 
 #Command to run the backend 
 python test.py
 
-#Open another terminal to run the following command
-npm run dev
+
 
 
 ##Important:
