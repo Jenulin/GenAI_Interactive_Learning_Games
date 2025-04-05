@@ -4,7 +4,7 @@
 Follow The Instructions
 
 #Install Python 
-#Ensure Python is installed on your system. Verify by running
+#Ensure Python is installed on your system. Verify by running:
 python –version
 #Install Required Libraries:
 npm install phaser
@@ -17,13 +17,13 @@ pip install flask-cors
 #To get node_modules run the following command in the terminal:
 npm install 
 
-#run the following command
+#run the following command:
 npm run dev
 
-#Open another terminal and change directory to backend
+#Open another terminal and change directory to backend:
 cd backend
 
-#Command to run the backend 
+#Command to run the backend:
 python test.py
 
 
